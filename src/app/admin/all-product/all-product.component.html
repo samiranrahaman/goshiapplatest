@@ -1,0 +1,53 @@
+<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+							<i class="glyphicon glyphicon-align-left faa-pulse animated"></i>
+						</button>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<div class="container-fluid">
+				<div class="content_bg">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="container">
+							  <h1>Post List</h1>
+							  <table class="table">
+								<thead>
+								  <tr>
+									<th>Name</th>
+									<th>Description</th>
+									 <th>Capacity</th>
+									 <th>Image</th>
+									<th>Action</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr *ngFor="let item of products">
+									<td>{{ item.part_name }}</td>
+									<td>{{ item.description }}</td>
+									<td>{{ item.capacity }}</td>
+									<td><img style="width: 19%" src="{{ item.productimage }}" /></td>
+									<td>Show Detail</td>
+								  </tr>
+								</tbody>
+							  </table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
