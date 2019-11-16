@@ -1,0 +1,80 @@
+<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+							<i class="glyphicon glyphicon-align-left faa-pulse animated"></i>
+						</button>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<div class="container-fluid">
+				<div class="content_bg">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="container">
+							  <h1>Company History</h1>
+							  <p class="addnew"><a href="/admin/history/add">Add New</a></p>
+							  <ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active"><a href="#english" aria-controls="home" role="tab" data-toggle="tab">English</a></li>
+										<li role="presentation"><a href="#japan" aria-controls="profile" role="tab" data-toggle="tab">Japan</a></li>
+							  </ul>
+							  <div class="tab-content">
+										   <div role="tabpanel" class="tab-pane active p-10" id="english">
+													  <table class="table">
+														<thead>
+														  <tr>
+															<th>Date</th>
+															<th>Description</th>
+															<th>Action</th>
+														  </tr>
+														</thead>
+														<tbody>
+														  <tr *ngFor="let item of products">
+															<td>{{ item.date }}</td>
+															<td>{{ item.description }}</td>
+															<td><a [routerLink]="['/admin/history/edit', item._id]" class="btn btn-primary">Edit</a></td>
+															<td><button (click)="deleteProduct(item._id)"  class="btn btn-danger">Delete</button></td>
+														  </tr>
+														   <tr *ngIf="products.length==0">No Record Found!</tr>
+														</tbody>
+													  </table>
+											 </div>
+											<div role="tabpanel" class="tab-pane p-10" id="japan">
+											       <table class="table">
+														<thead>
+														  <tr>
+															<th>Date</th>
+															<th>Description</th>
+															<th>Action</th>
+														  </tr>
+														</thead>
+														<tbody>
+														  <tr *ngFor="let item of products">
+															<td>{{ item.date }}</td>
+															<td>{{ item.jp_description }}</td>
+															<td><a [routerLink]="['/admin/history/edit', item._id]" class="btn btn-primary">Edit</a></td>
+															<td><button (click)="deleteProduct(item._id)"  class="btn btn-danger">Delete</button></td>
+														  </tr>
+														  <tr *ngIf="products.length==0">No Record Found!</tr>
+														</tbody>
+													  </table>
+											</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			

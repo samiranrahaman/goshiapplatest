@@ -1,0 +1,68 @@
+<div class="bg_contact">
+		<div class="container_bg">
+			<main role="main" class="container-fluid products">			
+				<h4 class="page_heading">製品</h4>
+				<div class="row">
+					<div class="col-sm-3 mb-20">
+						<ul id="content1" class="nav nav-tabs tabs-left sideways">
+						
+						<li *ngFor="let item of home.product; let i = index" id="li{{i}}" ><a href="#{{i}}" data-toggle="tab">{{item.jp_part_name}}</a></li> 
+							<!--<li class="active"><a href="#1" data-toggle="tab">CATALYST METAL</a></li>
+							<li><a href="#2" data-toggle="tab">MUFFLER ASSY</a></li>
+							<li><a href="#3" data-toggle="tab">FRAME ASSY</a></li>
+							<li><a href="#4" data-toggle="tab">REAR ASSY</a></li>
+							<li><a href="#5" data-toggle="tab">MAIN ASSY</a></li>
+							<li><a href="#6" data-toggle="tab">SWING ARM</a></li>
+							<li><a href="#7" data-toggle="tab">CAP FRONT</a></li>-->
+						</ul>
+					</div>
+					<div class="col-sm-9">
+						<div class="tab-content content2" >
+							<div *ngFor="let item2 of home.product; let i = index" class="tab-pane" id="{{i}}"  >
+								<div class="row">
+									<div class="col-sm-5">							
+										<img src="{{item2.productimage}}" class="img-responsive productMainPic"/>
+									</div>
+									<div class="col-sm-7">
+										<div class="clearfix">
+											<div class="left">部品名 :</div>
+											<div class="right">{{item2.jp_part_name}}</div>
+										</div>
+										<div class="clearfix">
+											<div class="left">説明 :</div>
+											<div class="right"> {{item2.jp_description}}</div>
+										</div>
+										<div class="clearfix">
+											<div class="left">生産能力 :</div>
+											<div class="right">{{item2.jp_capacity}}</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<div class="section-four">
+		<div class="overlay">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	
+	(function(){
+	       alert();
+		 // $('#content2').find('#0').addClass('active');
+		  $('#0').addClass('active');
+		}());
+		
+		
+	
+	</script>

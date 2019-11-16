@@ -1,0 +1,176 @@
+<div class="bg_contact">
+		<div class="container_bg">
+			<main role="main" class="container-fluid technology">			
+				<h4 class="page_heading">Technology</h4>
+				<div class="row top">
+					<div class="col-sm-6">
+						<img src="{{home.technologydata[0].productimage}}" class="img-responsive"/>
+					</div>
+					<div class="col-sm-6">
+					<p class="text" [innerHTML]="home.technologydata[0].description"></p>
+						
+					</div>
+				</div>
+				<div class="row topBottom">
+					<div class="col-sm-12">
+						<div class="carousel carousel-showsixmoveone slide" id="topBottom">
+							<div class="carousel-inner">
+								<div class="item PIC " *ngFor="let item of home.technologydata; let i = index" id="technologydatadiv{{i}}">
+									<div class="col-xs-12 col-sm-4 col-md-2">
+										<div class="hovereffect">
+											<img src="{{item.productimage}}" class="img-responsive"/>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-20">
+					<div class="col-sm-12">
+						<h3 class="title">Our Equipment</h3>
+						<div class="table-responsive mb-20">
+							<table class="table table-bordered">
+								<thead>
+									<th>Items</th>
+									<th>Machine Name</th>
+									<th>Qty</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Honey Comb</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.HoneyComb">
+												{{item.machine_name}}
+												</li>
+												<!--<li>Core Press Fit M/C</li>
+												<li>Pipe Coating M/C</li>
+												<li>Making M/C</li>
+												<li>Dryer M/C</li>
+												<li>Vacuum furnace</li>
+												<li>Puss Out M/C</li>
+												<li>Pipe degreasing line</li>-->
+											</ul>
+										</td>
+										<td>
+											<ul>
+											   <li  *ngFor="let item of home.HoneyComb">
+												{{item.qty}}
+												</li>
+												
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>Press / Bending</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.PressBending">
+												{{item.machine_name}}
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												  <li  *ngFor="let item of home.PressBending">
+												{{item.qty}}
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>Welding</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.Welding">{{item.machine_name}}
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.Welding">{{item.qty}}
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>Machining Tools</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.MachiningTools">{{item.machine_name}}
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.MachiningTools">{{item.qty}}
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>Quality assurance Equipment</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.QualityassuranceEquipment">{{item.machine_name}}
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.QualityassuranceEquipment">{{item.qty}}
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>Accessory Equipment</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.AccessoryEquipment">{{item.machine_name}}
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.AccessoryEquipment">{{item.qty}}
+												</li>
+											</ul>
+										</td>
+									</tr>
+								<tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-sm-4 col-sm-offset-4 manufacturing">
+					<!--<div class="col-sm-12 manufacturing">-->
+						<h3 class="title">Manufacturing Process</h3>
+						<ul>
+							<li   *ngFor="let itemmanu of home.manufacturingdata">{{itemmanu.process}}</li>
+							<!--<li>Welding</li>
+							<li>TIG Welding</li>
+							<li>MIG Welding</li>
+							<li>Press/Bending</li>
+							<li>Honey Comb Molding</li>
+							<li>Brazing</li>
+							<li>Baking and drying</li>
+							<li>Vacuum hardening</li>-->
+						</ul>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<div class="section-four">
+		<div class="overlay">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		

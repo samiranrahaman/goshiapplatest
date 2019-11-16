@@ -1,0 +1,276 @@
+<div class="bg_contact">
+		<div class="container_bg">
+			<main role="main" class="container-fluid about">			
+				<h4 class="page_heading">会社情報</h4>
+				<div class="row mb-20">
+					<div class="col-sm-7 top">
+						<h3><i class="fa fa-space-shuttle faa-passing animated" aria-hidden="true"></i> 目指す企業像 <i class="fa fa-space-shuttle faa-passing animated" aria-hidden="true"></i></h3>
+					    <p class="mb-20" [innerHTML]="about[0].jp_aim"></p>
+						<h3>会社のモットー</h3>
+						<p [innerHTML]="about[0].jp_moto"></p>
+					</div>
+				</div>
+				<div id="accordion">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<a class="accordion-toggle btn btn-link" data-toggle="collapse" data-parent="#accordion" href="#about_item1">
+								<i class="fa fa-spinner faa-spin animated"></i> 企業理念 <i class="fa fa-spinner faa-spin animated"></i>
+								<i class="fa fa-minus pull-right" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div id="about_item1" class="collapse in" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-sm-5">
+										<h3>会社方針</h3>
+										<p [innerHTML]="about[0].jp_policy"></p>
+									</div>
+									<div class="col-sm-5">
+										<h3>基本方針</h3>
+										<p [innerHTML]="about[0].jp_basicpolicy"></p>
+										<!--<ul>
+											<li><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i> To create a workplace that respects people and is a happy place to work</li>
+											<li><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i> To strive to be an active business that is youthful and has ambition</li>
+											<li><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i> To value time and theory, and pursue unique technologies</li>
+											<li><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i> To pursue quality and value through constant ingenuity</li>
+											<li><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i> To contribute to society through the actions of the company</li>
+										</ul>-->
+									</div>
+									<div class="col-sm-12">
+										<h3 class="borderTop">行動規範</h3>
+										<div class="row">
+											<div class="col-sm-3 mb-20 mt-10"><img src="{{about[0].productimage}}" class="img-responsive"/></div>
+											<div class="col-sm-9">
+											<p  style="margin-top: 100px;font-size: 20px;line-height: 34px;" [innerHTML]="about[0].jp_codeofconduct"></p>
+												
+											</div>
+										</div>										
+										<div class="row mb-20 mt-20">
+											<div class="col-sm-6">
+												<ul>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>コンプライアンス </h3>
+															<p [innerHTML]="about[0].jp_compliance"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>交通安全 </h3>
+															<p [innerHTML]="about[0].jp_roadsafety"></p>
+															</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>環境保護</h3>
+														     <p [innerHTML]="about[0].jp_ProtectingtheEnvironment"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>社会貢献 </h3>
+														<p [innerHTML]="about[0].jp_ContributingtoSociety"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>情報管理 </h3>
+														<p [innerHTML]="about[0].jp_ManagingInformation"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>安全衛生 </h3>
+														<p [innerHTML]="about[0].jp_SafetyandHealth"></p>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="col-sm-6">
+												<ul>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>差別 </h3>
+														<p [innerHTML]="about[0].jp_Discrimination"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>プライバシーの保護 </h3>
+														<p [innerHTML]="about[0].jp_ProtectingPrivacy"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>ビジネスインタラクション </h3>
+														<p [innerHTML]="about[0].jp_BusinessInteractions"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+														<h3>政府との関係 </h3>
+														<p [innerHTML]="about[0].jp_RelationshipwithGovernment"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+														<h3>コミュニケーション </h3>
+														<p [innerHTML]="about[0].jp_Communication"></p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<a class="accordion-toggle btn btn-link" data-toggle="collapse" data-parent="#accordion" href="#about_item2">
+								<i class="fa fa-spinner faa-spin animated"></i> 会社概要 <i class="fa fa-spinner faa-spin animated"></i> 
+								<i class="fa fa-plus pull-right" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div id="about_item2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<tbody>
+											<tr>
+												<th>会社名</th>
+												<td [innerHTML]="about[0].jp_CompanyName"></td>
+											</tr>
+											<tr>
+												<th>創業</th>
+												<td [innerHTML]="about[0].jp_Founded"></td>
+											</tr>
+											<tr>
+												<th>本部</th>
+												<td [innerHTML]="about[0].jp_Headquarters" ></td>
+											</tr>
+											<tr>
+												<th>資本</th>
+												<td [innerHTML]="about[0].jp_Capital"></td>
+											</tr>
+											<tr>
+												<th>主な株主</th>
+												<td [innerHTML]="about[0].jp_MainShareholders"></td>
+											</tr>
+											<tr>
+												<th>エリア</th>
+												<td  [innerHTML]="about[0].jp_Area" ></td>
+												</tr>
+												<tr>
+												<th>従業員<br>(グループ従業員)</th>
+												<td  [innerHTML]="about[0].jp_GroupEmployees" ></td>
+											</tr>
+											<tr>
+												<th>主な配送先</th>
+												<td [innerHTML]="about[0].jp_MainDeliveryDestinations" >
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<a class="accordion-toggle btn btn-link" data-toggle="collapse" data-parent="#accordion" href="#about_item3">
+								<i class="fa fa-spinner faa-spin animated"></i> 沿革 <i class="fa fa-spinner faa-spin animated"></i> 
+								<i class="fa fa-plus pull-right" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div id="about_item3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<tbody>
+											<tr *ngFor="let item of home.historydata ">
+												<th>{{item.date}}</th>
+												<td>{{item.jp_description}}</td>
+											</tr>
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<div class="card">
+						<div class="card-header" id="headingThree">
+							<a class="accordion-toggle btn btn-link" data-toggle="collapse" data-parent="#accordion" href="#about_item4">
+								<i class="fa fa-spinner faa-spin animated"></i> Financial Statements <i class="fa fa-spinner faa-spin animated"></i>
+								<i class="fa fa-plus pull-right" aria-hidden="true"></i>								
+							</a>
+						</div>
+						<div id="about_item4" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<ul class="clearfix">
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/45_kessan.pdf" target="_b">Financial Statement for 45th Period (Year of March 2017) (pdf, 281kb)</a></li>
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/44_kessan.pdf" target="_b">Financial Statement for 44th Period (Year of March 2017) (pdf, 91kb)</a></li>
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/43_kessan.pdf" target="_b">Financial Statement for 43rd Period (Year of March 2016) (pdf, 554kb)</a></li>
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/42_kessan.pdf" target="_b">Financial Statement for 42nd Period (Year of March 2015) (pdf, 182kb)</a></li>
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/41_kessan.pdf" target="_b">Financial Statement for 41st Period (Year of March 2014) (pdf, 541kb)</a></li>
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/40_kessan.pdf" target="_b">Financial Statement for 40th Period (Year of March 2013) (pdf, 571kb)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<a class="accordion-toggle btn btn-link" data-toggle="collapse" data-parent="#accordion" href="#about_item5">
+								<i class="fa fa-spinner faa-spin animated"></i>  Directors <i class="fa fa-spinner faa-spin animated"></i> 
+								<i class="fa fa-plus pull-right" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div id="about_item5" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<tbody>
+										<tr><th>President &amp; Representative Director</th><td>Yoshiki Matsubara</td></tr>
+										<tr><th>Managing Director</th><td>Ryuichi Nishimura</td></tr>
+										<tr><th>Managing Director</th><td>Akihiro Hara</td></tr>
+										<tr><th>Managing Director</th><td>Kenji Mitsuhashi</td></tr>
+										<tr><th>Managing Director</th><td>Hirohisa Fujita</td></tr>
+										<tr><th>Managing Director</th><td>Shin Koiwa</td></tr>
+										<tr><th>Director(Part-time)</th><td>Jiro Yamaguchi</td></tr>
+										<tr><th>Auditor</th><td>Ryoichi Nakahara</td></tr>
+										<tr><th>Auditor(Part-time)</th><td>Yasuyuki Mizutani</td></tr>
+										<tr><th>Operating Officer</th><td>Kazuo Asahina</td></tr>
+										<tr><th>Operating Officer</th><td>Kenji Nishiguchi</td></tr>
+										<tr><th>Operating Officer</th><td>Tetsuya Nishioka</td></tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+			</main>
+		</div>
+	</div>
+	<div class="section-four">
+		<div class="overlay">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12"></div>
+				</div>
+			</div>
+		</div>
+	</div>

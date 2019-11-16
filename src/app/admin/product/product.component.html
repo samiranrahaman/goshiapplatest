@@ -23,24 +23,48 @@
 							  <div class="row">
 								<div class="col-md-6">
 								  <form (ngSubmit)="saveProduct()" #productForm="ngForm" enctype="multipart/form-data">
-									
-									<div class="form-group">
-									  <label for="name">Part Name</label>
-									  <input type="text" class="form-control" [(ngModel)]="postdata.part_name" name="title" required>
-									</div>
-									<div class="form-group">
-									  <label for="name">Description</label>
-									  <textarea  class="form-control" [(ngModel)]="postdata.description" name="author" required></textarea>
-									</div>
-									
-									<div class="form-group">
-									  <label for="name">Production Capacity</label>
-									  <input type="text" class="form-control" [(ngModel)]="postdata.capacity" name="capacity" required>
-									</div>
-									<div class="form-group">
-									  <label for="name">Production Image</label>
-									<!-- <input (change)="onFileChanged($event)" type="file" id="avatar"  placeholder="Upload file..." />-->
-									<input type="file" accept="image/*" (change)="changeListener($event)">
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active"><a href="#english" aria-controls="home" role="tab" data-toggle="tab">English</a></li>
+										<li role="presentation"><a href="#japan" aria-controls="profile" role="tab" data-toggle="tab">Japan</a></li>
+									</ul>
+									<div class="tab-content">
+										   <div role="tabpanel" class="tab-pane active p-10" id="english">
+												<div class="form-group">
+												  <label for="name">Part Name</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.part_name" name="title" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Description</label>
+												  <textarea  class="form-control" [(ngModel)]="postdata.description" name="author" required></textarea>
+												</div>
+												
+												<div class="form-group">
+												  <label for="name">Production Capacity</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.capacity" name="capacity" required>
+												</div>
+												
+											</div>
+											<div role="tabpanel" class="tab-pane p-10" id="japan">
+											   <div class="form-group">
+												  <label for="name">Part Name</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.jp_part_name" name="title" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Description</label>
+												  <textarea  class="form-control" [(ngModel)]="postdata.jp_description" name="author" required></textarea>
+												</div>
+												
+												<div class="form-group">
+												  <label for="name">Production Capacity</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.jp_capacity" name="capacity" required>
+												</div>
+												
+											</div>
+											<div class="form-group">
+												  <label for="name">Production Image</label>
+												<!-- <input (change)="onFileChanged($event)" type="file" id="avatar"  placeholder="Upload file..." />-->
+												<input type="file" accept="image/*" (change)="changeListener($event)">
+											</div>
 									</div>
 									<div class="form-group">
 									  <button type="submit" class="btn btn-success" [disabled]="!productForm.form.valid">Save</button>

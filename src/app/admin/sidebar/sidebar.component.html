@@ -1,28 +1,36 @@
 <!-- Sidebar Holder -->
 		<nav id="sidebar">
 			<div class="sidebar-header">
-				<a href="#"><img src="/assets/images/logo.png"/></a>
+				<a [routerLink]="['/admin/dashboard']"><img src="/assets/images/logo.png"/></a>
 			</div>
 			
 			<ul class="list-unstyled components">
-				<li class="active">
-					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+				<!--<li class="active">
+					<a href="admin/dashboard">
 						<i class="glyphicon glyphicon-home faa-pulse animated"></i>
 						Home
 					</a>
-					<ul class="collapse list-unstyled" id="homeSubmenu">
-						<li><a href="admin/dashboard">Home 1</a></li>
-						
-					</ul>
-				</li>
-				<li>
-					<a href="admin/dashboard">
-						<i class="glyphicon glyphicon-briefcase faa-pulse animated"></i>
-						About
+					
+				</li>-->
+				<li [routerLinkActive]="'active'" ><a [routerLink]="['/admin/dashboard']" ><i class="glyphicon glyphicon-home faa-pulse animated"></i>Home</a></li>
+				
+				<li [routerLinkActive]="'active'">
+					 <a [routerLink]="['/admin/homecontent']" >
+						<i class="glyphicon glyphicon-duplicate"></i>
+						Home Content
 					</a>
+                </li>
+				<li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{match:['/admin/about', '/admin/history']}">
+					<a href="#pageSubmenuabout" data-toggle="collapse" aria-expanded="false">
+						<i class="glyphicon glyphicon-briefcase faa-pulse animated"></i>
+						About Us
+					</a>
+					<ul class="collapse list-unstyled" id="pageSubmenuabout">
+						<li [routerLinkActive]="'active'"><a [routerLink]="['/admin/about']" >About US </a></li>
+						<li [routerLinkActive]="'active'"><a [routerLink]="['/admin/history']">Company History</a></li>
+					</ul>
 					
-					
-					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+					<!--<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
 						<i class="glyphicon glyphicon-duplicate"></i>
 						Post
 					</a>
@@ -30,19 +38,74 @@
 						<li><a href="admin/create_post">Create Post</a></li>
 						<li><a href="admin/all_post">Post List</a></li>
 						
-					</ul>
-					
+					</ul>-->
+				</li>
+                <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{match:['/admin/product', '/admin/all_product']}" >				
 					<a href="#pageSubmenuProduct" data-toggle="collapse" aria-expanded="false">
 						<i class="glyphicon glyphicon-duplicate"></i>
 						Product
 					</a>
 					<ul class="collapse list-unstyled" id="pageSubmenuProduct">
-						<li><a href="admin/product">Create Product</a></li>
-						<li><a href="admin/all_product">Product List</a></li>
+						<li [routerLinkActive]="'active'"><a [routerLink]="['/admin/product']" >Create Product</a></li>
+						<li [routerLinkActive]="'active'"><a [routerLink]="['/admin/all_product']" >Product List</a></li>
 						
 					</ul>
 				</li>
-				<li>
+                 <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{match:['/admin/technology', '/admin/technology/equipment','/admin/technology/manufacturing']}">				
+					<a href="#pageSubmenuTechnology" data-toggle="collapse" aria-expanded="false">
+						<i class="glyphicon glyphicon-duplicate"></i>
+						Technology
+					</a>
+					<ul class="collapse list-unstyled" id="pageSubmenuTechnology">
+						<li [routerLinkActive]="'active'"><a [routerLink]="['/admin/technology']">Technology List</a></li>
+						<li [routerLinkActive]="'active'" ><a [routerLink]="['/admin/technology/equipment']">Our Equipment</a></li>
+						<li [routerLinkActive]="'active'"><a [routerLink]="['/admin/technology/manufacturing']" >Manufacturing Process</a></li>
+						
+					</ul>
+				</li>
+				<li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{match:['/admin/event/add', '/admin/event']}">
+					<a href="#pageSubmenuEvent" data-toggle="collapse" aria-expanded="false">
+						<i class="glyphicon glyphicon-duplicate"></i>
+						Event
+					</a>
+					<ul class="collapse list-unstyled" id="pageSubmenuEvent">
+						<li [routerLinkActive]="'active'"><a [routerLink]="['/admin/event/add']" >Create Event</a></li>
+						<li [routerLinkActive]="'active'"><a [routerLink]="['/admin/event']" >Event List</a></li>
+						
+					</ul>
+				</li>
+				<li [routerLinkActive]="'active'">
+				
+					<a [routerLink]="['/admin/globalpresence']" >
+						<i class="glyphicon glyphicon-duplicate"></i>
+						Global Presence
+					</a>
+				</li>
+				<li [routerLinkActive]="'active'">
+					<a  [routerLink]="['/admin/achivement']" >
+						<i class="glyphicon glyphicon-duplicate"></i>
+						Achivement
+					</a>
+				</li>
+				<li [routerLinkActive]="'active'">
+					<a [routerLink]="['/admin/certificate']" >
+						<i class="glyphicon glyphicon-duplicate"></i>
+						Certificate
+					</a>
+				</li>
+				<li [routerLinkActive]="'active'">
+					<a [routerLink]="['/admin/editor']" >
+						<i class="glyphicon glyphicon-duplicate"></i>
+						Editor Content
+					</a>
+				</li>
+				<li [routerLinkActive]="'active'">
+					<a [routerLink]="['/admin/customer']"  >
+						<i class="glyphicon glyphicon-duplicate"></i>
+						Customer
+					</a>
+				</li>
+				<!-- <li>
 					<a href="admin/dashboard">
 						<i class="glyphicon glyphicon-link faa-pulse animated"></i>
 						Portfolio
@@ -59,6 +122,6 @@
 						<i class="glyphicon glyphicon-send faa-pulse animated"></i>
 						Contact
 					</a>
-				</li>
+				</li>--> 
 			</ul>
 		</nav>

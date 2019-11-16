@@ -1,33 +1,333 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AngularTourOfHeroes</title>
-  <base href="/">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="/assets/images/logo.png">-->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!-- custom css -->
+    <title>Goshi-india</title>
+     <base href="/">
+    <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/css/common.css" rel="stylesheet">
-	<link href="/assets/css/style.css" rel="stylesheet">
-  <!-- end -->
-</head>
+   <!--<link href="/assets/css/admin/css/editor.css" rel="stylesheet">-->
+   <link href="/assets/css/font-awesome-animation.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/assets/css/gallery.css">
+	<!--<script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131730915-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131730915-1');
+</script>
+  </head>
 <body>
   <app-root></app-root>
+  
 </body>
-  <!-- custom script -->
-    
-	<script src="/assets/js/jquery.min.js"></script>
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
-	<script type="text/javascript">
-		 $(document).ready(function () {
-			 $('#sidebarCollapse').on('click', function () {
-				 $('#sidebar').toggleClass('active');
-			 });
-		 });
-	 </script>
-  <!-- end -->
+		<!--<script src="/assets/js/editor.js"></script>-->
+		
+	<!--gallery/-->
+	<script src="/assets/js/isotope.min.js"></script>
+	<script src="/assets/js/jquery.fancybox.pack.js"></script>
+	<script src="/assets/js/main.js"></script>
+	<script src="/assets/js/custom.js"></script>
+	<!--<script src="/assets/js/customhome.js"></script>-->
+	<script>	
+		(function(){
+		  $('#globalPresence').carousel({ interval: 3000 });
+		}());
+       //setTimeout(function(){ 		  $('#globalPresence').carousel({ interval: 3000 }); }, 3000);
+		/*(function(){
+		  $('#globalPresence .PIC').each(function(){
+			var itemToClone = $(this);
+
+			for (var i=1;i<6;i++) {
+			  itemToClone = itemToClone.next();
+			  if (!itemToClone.length) {
+				itemToClone = $(this).siblings(':first');
+			  }
+			  itemToClone.children(':first-child').clone()
+				.addClass("cloneditem-"+(i))
+				.appendTo($(this));
+			}
+		  });
+		}());*/
+		
+		/*ourProduct*/
+		(function(){
+		  $('#ourProduct').carousel({ interval: 2500 });
+		}());
+
+		/*(function(){
+		  $('#ourProduct .PIC').each(function(){
+			var itemToClone = $(this);
+
+			for (var i=1;i<6;i++) {
+			  itemToClone = itemToClone.next();
+			  if (!itemToClone.length) {
+				itemToClone = $(this).siblings(':first');
+			  }
+			  itemToClone.children(':first-child').clone()
+				.addClass("cloneditem-"+(i))
+				.appendTo($(this));
+			}
+		  });
+		}());*/
+		
+		 $(document).ready(function(){ 	
+			
+			//$('#myCarousel').carousel()
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			});
+			
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+		}); 
+		
+		
+	</script> 
+	<script>	
+		/*(function(){
+		  $('#topBottom').carousel({ interval: 3000 });
+		}());
+
+		(function(){
+		  $('#topBottom .PIC').each(function(){
+			var itemToClone = $(this);
+
+			for (var i=1;i<6;i++) {
+			  itemToClone = itemToClone.next();
+			  if (!itemToClone.length) {
+				itemToClone = $(this).siblings(':first');
+			  }
+			  itemToClone.children(':first-child').clone()
+				.addClass("cloneditem-"+(i))
+				.appendTo($(this));
+			}
+		  });
+		}());*/
+		(function(){
+		  $('#topBottom').carousel({ interval: 3000 });
+		}());
+		$(document).ready(function(){ 			
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+			
+			/*$("#txtEditor1ENG").Editor();
+		$("#txtEditor2ENG").Editor();
+		$("#txtEditor3ENG").Editor();
+		$("#txtEditor4ENG").Editor();
+		$("#txtEditor5ENG").Editor();*/
+		
+		});
+		
+		var handle = setInterval(checkall,1000);	
+		 
+	    function  checkall(){
+		//console.log("alert");
+		//setTimeout(function(){ 
+		   if($(".img0").length >0) {  $(".img0").css("style", "display: block !important");  
+             $(".img0").html('<i class="fa fa-search"></i>');
+					
+     		   }
+		
+		
+            (function(){
+	      
+		 // $('#content2').find('#0').addClass('active');
+		 if($("#0").length >0) { $('#0').addClass('active');  }
+		 if($("#li0").length >0) {  $("#li0").addClass('active'); clearInterval(handle); handle = 0; }
+		 if($("#globalpresencedatadiv0").length >0) { $("#globalpresencedatadiv0").addClass('active'); }
+		 if($("#productdiv0").length >0) { $("#productdiv0").addClass('active'); }
+		 if($("#certificationsdiv0").length >0) {  $("#certificationsdiv0").addClass('active'); clearInterval(handle); handle = 0; }
+		 if($("#editorcontentdatadiv0").length >0) {  $("#editorcontentdatadiv0").addClass('active'); clearInterval(handle); handle = 0; }
+		 
+		 //if($("#technologydatadiv0").length >0) {  $("#technologydatadiv0").addClass('active'); clearInterval(handle); handle = 0; }
+		  
+		 // $('.tab-pane').addClass("test");
+		
+		 
+		 
+		
+		  
+		}());
+		
+		
+		
+		(function(){
+		  $('#globalPresence .PIC').each(function(){
+			var itemToClone = $(this);
+
+			for (var i=1;i<6;i++) {
+			  itemToClone = itemToClone.next();
+			  if (!itemToClone.length) {
+				itemToClone = $(this).siblings(':first');
+			  }
+			  itemToClone.children(':first-child').clone()
+				.addClass("cloneditem-"+(i))
+				.appendTo($(this));
+			}
+		  });
+		}())
+		
+		
+		(function(){
+		  $('#ourProduct .PIC').each(function(){
+			var itemToClone = $(this);
+
+			for (var i=1;i<6;i++) {
+			  itemToClone = itemToClone.next();
+			  if (!itemToClone.length) {
+				itemToClone = $(this).siblings(':first');
+			  }
+			  itemToClone.children(':first-child').clone()
+				.addClass("cloneditem-"+(i))
+				.appendTo($(this));
+			}
+		  });
+		}());
+		
+		
+		$(document).ready(function(){ 	
+			/*Certifications*/
+			$('#myCarousel').carousel()
+			$('#editorcontentdata').carousel()
+			
+			  
+		});
+		
+		
+		
+
+		/*(function(){
+		  $('#topBottom .PIC').each(function(){
+			var itemToClone = $(this);
+
+			for (var i=1;i<6;i++) {
+			  itemToClone = itemToClone.next();
+			  if (!itemToClone.length) {
+				itemToClone = $(this).siblings(':first');
+			  }
+			  itemToClone.children(':first-child').clone()
+				.addClass("cloneditem-"+(i))
+				.appendTo($(this));
+			}
+		  });
+		}());*/
+
+		//}, 1000);
+		}
+		(function(){
+		  $('#topBottom').carousel({ interval: 3000 });
+		}());
+		setTimeout(function(){
+		
+		if($("#technologydatadiv0").length >0) { 
+
+		$("#technologydatadiv0").addClass('active');
+		
+		}
+		(function(){
+		  $('#topBottom').carousel({ interval: 3000 });
+		}());
+		
+		(function(){
+		  $('#topBottom .PIC').each(function(){
+			var itemToClone = $(this);
+
+			for (var i=1;i<6;i++) {
+			  itemToClone = itemToClone.next();
+			  if (!itemToClone.length) {
+				itemToClone = $(this).siblings(':first');
+			  }
+			  itemToClone.children(':first-child').clone()
+				.addClass("cloneditem-"+(i))
+				.appendTo($(this));
+			}
+		  });
+		}());
+		
+		
+		var isotopeContainer = $('.isotopeContainer');
+		 $('.isotopeFilters').on( 'click', 'a', function(e) {
+			   // alert();
+				$('.isotopeFilters').find('.active').removeClass('active');
+				$(this).parent().addClass('active');
+				var filterValue = $(this).attr('data-filter');
+				//alert(filterValue)
+				
+				//$('.isotopeSelector').find(active).css('display',"block");
+				
+				isotopeContainer.isotope({ filter: filterValue });
+				e.preventDefault();
+			});
+		 
+		
+		
+		
+        }, 3000);		
+		
+		
+		
+	</script>
+	
+	<!--<div id="content"></div>-->
+	
+<script type="text/javascript">
+  /*  function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+    }
+
+	function triggerHtmlEvent(element, eventName) {
+	  var event;
+	  if (document.createEvent) {
+		event = document.createEvent('HTMLEvents');
+		event.initEvent(eventName, true, true);
+		element.dispatchEvent(event);
+	  } else {
+		event = document.createEventObject();
+		event.eventType = eventName;
+		element.fireEvent('on' + event.eventType, event);
+	  }
+	}
+
+	$('.lang-select').click(function() {
+	  var theLang = jQuery(this).attr('data-lang');
+	  $('.goog-te-combo').val(theLang);
+
+	  //alert(jQuery(this).attr('href'));
+	  window.location = $(this).attr('href');
+	  location.reload();
+
+	});*/
+  </script>
+
+<!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
+
 </html>

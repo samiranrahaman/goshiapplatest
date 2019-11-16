@@ -6,66 +6,8 @@
 			</div>
 		</div>
 	</footer>
+	 <link href="/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="/assets/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    
-	<script>	
-		(function(){
-		  $('#globalPresence').carousel({ interval: 3000 });
-		}());
-
-		(function(){
-		  $('#globalPresence .PIC').each(function(){
-			var itemToClone = $(this);
-
-			for (var i=1;i<6;i++) {
-			  itemToClone = itemToClone.next();
-			  if (!itemToClone.length) {
-				itemToClone = $(this).siblings(':first');
-			  }
-			  itemToClone.children(':first-child').clone()
-				.addClass("cloneditem-"+(i))
-				.appendTo($(this));
-			}
-		  });
-		}());
-		
-		/*ourProduct*/
-		(function(){
-		  $('#ourProduct').carousel({ interval: 2500 });
-		}());
-
-		(function(){
-		  $('#ourProduct .PIC').each(function(){
-			var itemToClone = $(this);
-
-			for (var i=1;i<6;i++) {
-			  itemToClone = itemToClone.next();
-			  if (!itemToClone.length) {
-				itemToClone = $(this).siblings(':first');
-			  }
-			  itemToClone.children(':first-child').clone()
-				.addClass("cloneditem-"+(i))
-				.appendTo($(this));
-			}
-		  });
-		}());
-		
-		
-		$(document).ready(function(){ 	
-			$('#myCarousel').carousel()
-			$(window).scroll(function(){
-				if ($(this).scrollTop() > 100) {
-					$('.scrollup').fadeIn();
-				} else {
-					$('.scrollup').fadeOut();
-				}
-			}); 
-			
-			$('.scrollup').click(function(){
-				$("html, body").animate({ scrollTop: 0 }, 600);
-				return false;
-			});
-		});
-	</script>
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/style.css" rel="stylesheet">

@@ -1,0 +1,279 @@
+    <link href="/assets/css/font-awesome-animation.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/assets/css/gallery.css">
+	<div class="bg_contact">
+		<div class="container_bg">
+			<main role="main" class="container-fluid products">			
+				<h4 class="page_heading">Human Resource</h4>
+				<div class="row">
+					<div class="col-sm-3 mb-20">
+						<ul class="nav nav-tabs tabs-left sideways">
+							<li class="active"><a href="#1" data-toggle="tab">Event</a></li>
+							<li><a href="#2" data-toggle="tab">Recruitment</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-9">
+						<div class="tab-content">
+							<div class="tab-pane active" id="1">
+								<div class="row">
+									<div class="col-sm-12">									
+										<section class="filter-section">
+											<div class="row">
+												<div class="col-sm-12 col-xs-12">         
+													<div class="filter-container isotopeFilters">
+														<ul class="list-inline filter">
+															<li class="active"><a href="javascript:void(0)" data-filter="*">All </a></li>
+															<li><a href="javascript:void(0)" data-filter=".diwali">Diwali</a></li>
+															<li><a href="javascript:void(0)" data-filter=".janmastmi">Janmastmi</a></li>
+															<li><a href="javascript:void(0)" data-filter=".lohri">Lohri</a></li>
+															<li><a href="javascript:void(0)" data-filter=".longServiceAward">Long Service Award</a></li>
+															<li><a href="javascript:void(0)" data-filter=".vishakarma">Vishakarma</a></li>
+															<li><a href="javascript:void(0)" data-filter=".holi">Holi</a></li>
+															<li><a href="javascript:void(0)" data-filter=".anniversary">10th Anniversary</a></li>
+														</ul>
+													</div>													
+												</div>
+											</div>
+										</section>
+										<section class="portfolio-section port-col">
+											<div class="row">
+												<div class="isotopeContainer">													
+													<div class="col-sm-6 isotopeSelector longServiceAward">
+														<article class="">
+															<figure>
+																<img src="{{home.LongServiceAward[0].productimage}}" alt="">
+																<div class="overlay-background">
+																	<div class="inner"></div>
+																</div>
+																<div class="overlay">
+																	<div class="inner-overlay">
+																		<div class="inner-overlay-content with-icons" style="text-align: -webkit-center;">
+																		   
+																		   <a  *ngFor="let item of home.LongServiceAward; let i = index" class="fancybox-pop img{{i}}" style="display: none" href="{{item.productimage}}" rel="portfolio-1"></a>
+																		</div>
+																	</div>
+																</div>
+															</figure>
+															<div class="article-title"><a href="#">{{home.LongServiceAward[0].title}}</a></div>
+														</article>
+													</div>
+													
+													<div class="col-sm-6 isotopeSelector diwali">
+														<article class="">
+															<figure>
+																<!--<img src="/assets/images/events/diwali/2.jpg" alt="">-->
+																<img src="{{home.Diwali[0].productimage}}" alt="">
+																
+																<div class="overlay-background">
+																	<div class="inner"></div>
+																</div>
+																<div class="overlay">
+																	<div class="inner-overlay">
+																		<div class="inner-overlay-content with-icons" style="text-align: -webkit-center;">
+																		 <a  *ngFor="let item of home.Diwali ; let i = index" class="fancybox-pop img{{i}}" style="display: none" href="{{item.productimage}}" rel="portfolio-1"></a>
+																		</div>
+																	</div>
+																</div>
+															</figure>
+															<div class="article-title"><a href="#">{{home.Diwali[0].title}}</a></div>
+														</article>
+													</div>
+																										
+													<div class="col-sm-6 isotopeSelector lohri">
+														<article class="">
+															<figure>
+																<!--<img src="/assets/images/events/lohri/1.jpg" alt="">-->
+																<img src="{{home.Lohri[0].productimage}}" alt="">
+																<div class="overlay-background">
+																	<div class="inner"></div>
+																	</div>
+																	<div class="overlay">
+																		<div class="inner-overlay">
+																			<div class="inner-overlay-content with-icons" style="text-align: -webkit-center;">
+																			     <a  *ngFor="let item of home.Lohri ; let i = index" class="fancybox-pop img{{i}}" style="display: none" href="{{item.productimage}}" rel="portfolio-1"></a>
+																			</div>
+																		</div>
+																	</div>
+																</figure>
+																<div class="article-title"><a href="#">{{home.Lohri[0].title}}</a></div>
+															</article>
+														</div>
+														
+														<div class="col-sm-6 isotopeSelector janmastmi">
+															<article class="">
+																<figure>
+																	<!--<img src="/assets/images/events/janmastmi/1.jpg" alt="">-->
+																	<img src="{{home.Janmastmi[0].productimage}}" alt="">
+																	<div class="overlay-background">
+																		<div class="inner"></div>
+																	</div>
+																	<div class="overlay">
+																		<div class="inner-overlay">
+																			<div class="inner-overlay-content with-icons" style="text-align: -webkit-center;">
+																			    <a  *ngFor="let item of home.Janmastmi ; let i = index" class="fancybox-pop img{{i}}" style="display: none" href="{{item.productimage}}" rel="portfolio-1"></a>
+																				
+																			</div>
+																		</div>
+																	</div>
+																</figure>
+																<div class="article-title"><a href="#">{{home.Janmastmi[0].title}}</a></div>
+															</article>
+														</div>
+														
+														<div class="col-sm-6 isotopeSelector vishakarma">
+															<article class="">
+																<figure>
+																	<!--<img src="/assets/images/events/vishakarma/1.jpg" alt="">-->
+																	<img src="{{home.Vishakarma[0].productimage}}" alt="">
+																	<div class="overlay-background">
+																		<div class="inner"></div>
+																	</div>
+																	<div class="overlay">
+																		<div class="inner-overlay">
+																			<div class="inner-overlay-content with-icons" style="text-align: -webkit-center;">
+																			<a  *ngFor="let item of home.Vishakarma ; let i = index" class="fancybox-pop img{{i}}" style="display: none" href="{{item.productimage}}" rel="portfolio-1"></a>
+																			</div>
+																		</div>
+																	</div>
+																</figure>
+																<div class="article-title"><a href="#">{{home.Vishakarma[0].title}}</a></div>
+															</article>
+														</div>
+														
+														
+														<div class="col-sm-6 isotopeSelector holi" *ngIf="home.Holi[0].productimage">
+															<article class="">
+																<figure>
+																	<img src="{{home.Holi[0].productimage}}" alt="">
+																	<div class="overlay-background">
+																		<div class="inner"></div>
+																	</div>
+																	<div class="overlay">
+																		<div class="inner-overlay">
+																			<div class="inner-overlay-content with-icons" style="text-align: -webkit-center;">
+																			<a  *ngFor="let item of home.Holi ; let i = index" class="fancybox-pop img{{i}}" style="display: none" href="{{item.productimage}}" rel="portfolio-1"></a>
+																			</div>
+																		</div>
+																	</div>
+																</figure>
+																<div class="article-title"><a href="#">{{home.Holi[0].title}}</a></div>
+															</article>
+														</div>
+														
+														<div class="col-sm-6 isotopeSelector anniversary">
+															<article class="">
+																<figure>
+																	<!--<img src="/assets/images/events/vishakarma/1.jpg" alt="">-->
+																	<img src="{{home.Anniversary[0].productimage}}" alt="">
+																	<div class="overlay-background">
+																		<div class="inner"></div>
+																	</div>
+																	<div class="overlay">
+																		<div class="inner-overlay">
+																			<div class="inner-overlay-content with-icons" style="text-align: -webkit-center;">
+																			<a  *ngFor="let item of home.Anniversary ; let i = index" class="fancybox-pop img{{i}}" style="display: none" href="{{item.productimage}}" rel="portfolio-1"></a>
+																			</div>
+																		</div>
+																	</div>
+																</figure>
+																<div class="article-title"><a href="#">{{home.Anniversary[0].title}}</a></div>
+															</article>
+														</div>
+														
+														
+														
+													</div>
+												</div>
+										</section>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane" id="2">
+								<div class="row career">
+									<div class="col-sm-offset-2 col-sm-8">
+                                    	<h3>Please send us your details!!!</h3>
+										
+										 <!--<form (ngSubmit)="saveProduct()" #productForm="ngForm" enctype="multipart/form-data">
+									          <div class="form-group">
+												  <label for="name">Part Name</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.jp_part_name" name="title" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Description</label>
+												  <textarea  class="form-control" [(ngModel)]="postdata.jp_description" name="author" required></textarea>
+												</div>
+												
+										
+											<div class="form-group">
+											  <button type="submit" class="btn btn-success" [disabled]="!productForm.form.valid">Save</button>
+											</div>
+										  </form>-->
+										  <div style="color:red;text-align: center;margin-top: 10px;" *ngIf="success">{{success.error}}</div>
+										<form (ngSubmit)="saveProduct()" #productForm="ngForm" enctype="multipart/form-data" >
+                                        	<div class="form-group row">
+                                              <label for="inputEmail3" class="col-sm-3 col-form-label">First Name</label>
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control" [(ngModel)]="postdata.fname" name="fname" id="fname" placeholder="First Name" required>
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="inputEmail3" class="col-sm-3 col-form-label">Last Name</label>
+                                              <div class="col-sm-9">
+											     <input type="text" class="form-control" [(ngModel)]="postdata.lname" name="lname" id="lname" placeholder="Last Name" required>
+                                             
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="inputEmail3" class="col-sm-3 col-form-label">Enter email</label>
+                                              <div class="col-sm-9">
+                                                <input email="true" type="email"  [(ngModel)]="postdata.fromemail" name="fromemail" class="form-control" id="fromemail" required placeholder="Enter email">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="inputEmail3" class="col-sm-3 col-form-label">Mobile No.</label>
+                                              <div class="col-sm-9">
+                                                <input type="tel" maxlength="12" [(ngModel)]="postdata.phno" name="phno" class="form-control" id="phno" required placeholder="Mobile No.">
+                                              </div>
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="inputEmail3" class="col-sm-3 col-form-label">Resume</label>
+                                              <div class="col-sm-9">
+                                                <!--<input type="file" class="form-control" [(ngModel)]="postdata.fileupload" id="fileupload" name="fileupload" required  aria-describedby="fileHelp"/>-->
+												<input type="file"  class="form-control"  accept="image/*" (change)="changeListener($event)"  required>
+                                              </div> 
+                                            </div>
+                                            <div class="form-group row">
+                                              <label for="message" class="col-sm-3 col-form-label">Message</label>
+                                              <div class="col-sm-9">
+												
+                                                <textarea class="form-control"  [(ngModel)]="postdata.Message" id="Message" name="Message" rows="3" placeholder="Message"></textarea>
+                                              </div>
+                                            </div>
+                                            <div class="pull-right">
+                                            	
+												<button type="submit" class="btn btn-primary send" [disabled]="!productForm.form.valid"><i class="fa fa-hand-o-right faa-pulse animated" aria-hidden="true"></i> Send</button>
+                                            </div>
+                                        </form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<div class="section-four">
+		<div class="overlay">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--gallery/-->
+	<!--<script src="/assets/js/isotope.min.js"></script>
+	<script src="/assets/js/jquery.fancybox.pack.js"></script>
+	<script src="/assets/js/main.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

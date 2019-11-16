@@ -11,6 +11,7 @@ export class FrontFooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+	 
   }
 
 }

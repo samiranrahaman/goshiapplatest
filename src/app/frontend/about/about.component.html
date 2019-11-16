@@ -1,0 +1,276 @@
+<div class="bg_contact">
+		<div class="container_bg">
+			<main role="main" class="container-fluid about">			
+				<h4 class="page_heading">About Us</h4>
+				<div class="row mb-20">
+					<div class="col-sm-7 top">
+						<h3><i class="fa fa-space-shuttle faa-passing animated" aria-hidden="true"></i> Aim of Corporate Image <i class="fa fa-space-shuttle faa-passing animated" aria-hidden="true"></i></h3>
+					    <p class="mb-20" [innerHTML]="about[0].aim"></p>
+						<h3>Company Motto</h3>
+						<p [innerHTML]="about[0].moto"></p>
+					</div>
+				</div>
+				<div id="accordion">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<a class="accordion-toggle btn btn-link" data-toggle="collapse" data-parent="#accordion" href="#about_item1">
+								<i class="fa fa-spinner faa-spin animated"></i> Corporate Philosophy <i class="fa fa-spinner faa-spin animated"></i>
+								<i class="fa fa-minus pull-right" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div id="about_item1" class="collapse in" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-sm-5">
+										<h3>Company Policy</h3>
+										<p [innerHTML]="about[0].policy"></p>
+									</div>
+									<div class="col-sm-5">
+										<h3>Basic Policy</h3>
+										<p [innerHTML]="about[0].basicpolicy"></p>
+										<!--<ul>
+											<li><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i> To create a workplace that respects people and is a happy place to work</li>
+											<li><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i> To strive to be an active business that is youthful and has ambition</li>
+											<li><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i> To value time and theory, and pursue unique technologies</li>
+											<li><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i> To pursue quality and value through constant ingenuity</li>
+											<li><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i> To contribute to society through the actions of the company</li>
+										</ul>-->
+									</div>
+									<div class="col-sm-12">
+										<h3 class="borderTop">Our Code of Conduct</h3>
+										<div class="row">
+											<div class="col-sm-3 mb-20 mt-10"><img src="{{about[0].productimage}}" class="img-responsive"/></div>
+											<div class="col-sm-9">
+											<p  style="margin-top: 100px;font-size: 20px;line-height: 34px;" [innerHTML]="about[0].codeofconduct"></p>
+												
+											</div>
+										</div>										
+										<div class="row mb-20 mt-20">
+											<div class="col-sm-6">
+												<ul>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>Compliance </h3>
+															<p [innerHTML]="about[0].compliance"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>Road Safety </h3>
+															<p [innerHTML]="about[0].roadsafety"></p>
+															</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>Protecting the Environment </h3>
+														     <p [innerHTML]="about[0].ProtectingtheEnvironment"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>Contributing to Society </h3>
+														<p [innerHTML]="about[0].ContributingtoSociety"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>Managing Information </h3>
+														<p [innerHTML]="about[0].ManagingInformation"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>Safety and Health </h3>
+														<p [innerHTML]="about[0].SafetyandHealth"></p>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="col-sm-6">
+												<ul>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>Discrimination </h3>
+														<p [innerHTML]="about[0].Discrimination"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>Protecting Privacy </h3>
+														<p [innerHTML]="about[0].ProtectingPrivacy"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+															<h3>Business Interactions </h3>
+														<p [innerHTML]="about[0].BusinessInteractions"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+														<h3>Relationship with Government </h3>
+														<p [innerHTML]="about[0].RelationshipwithGovernment"></p>
+														</div>
+													</li>
+													<li class="clearfix">
+														<div class="icon-left"><i class="fa fa-hand-o-right faa-passing animated" aria-hidden="true"></i></div>
+														<div class="icon-right">
+														<h3>Communication </h3>
+														<p [innerHTML]="about[0].Communication"></p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<a class="accordion-toggle btn btn-link" data-toggle="collapse" data-parent="#accordion" href="#about_item2">
+								<i class="fa fa-spinner faa-spin animated"></i> Company Overview <i class="fa fa-spinner faa-spin animated"></i> 
+								<i class="fa fa-plus pull-right" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div id="about_item2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<tbody>
+											<tr>
+												<th>Company Name</th>
+												<td [innerHTML]="about[0].CompanyName"></td>
+											</tr>
+											<tr>
+												<th>Founded</th>
+												<td [innerHTML]="about[0].Founded"></td>
+											</tr>
+											<tr>
+												<th>Headquarters</th>
+												<td [innerHTML]="about[0].Headquarters" ></td>
+											</tr>
+											<tr>
+												<th>Capital</th>
+												<td [innerHTML]="about[0].Capital"></td>
+											</tr>
+											<tr>
+												<th>Main Shareholders</th>
+												<td [innerHTML]="about[0].MainShareholders"></td>
+											</tr>
+											<tr>
+												<th>Area</th>
+												<td  [innerHTML]="about[0].Area" ></td>
+												</tr>
+												<tr>
+												<th>Employees<br>(Group Employees)</th>
+												<td  [innerHTML]="about[0].GroupEmployees" ></td>
+											</tr>
+											<tr>
+												<th>Main Delivery Destinations</th>
+												<td [innerHTML]="about[0].MainDeliveryDestinations" >
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<a class="accordion-toggle btn btn-link" data-toggle="collapse" data-parent="#accordion" href="#about_item3">
+								<i class="fa fa-spinner faa-spin animated"></i> History <i class="fa fa-spinner faa-spin animated"></i> 
+								<i class="fa fa-plus pull-right" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div id="about_item3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<tbody>
+											<tr *ngFor="let item of home.historydata ">
+												<th>{{item.date}}</th>
+												<td>{{item.description}}</td>
+											</tr>
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<div class="card">
+						<div class="card-header" id="headingThree">
+							<a class="accordion-toggle btn btn-link" data-toggle="collapse" data-parent="#accordion" href="#about_item4">
+								<i class="fa fa-spinner faa-spin animated"></i> Financial Statements <i class="fa fa-spinner faa-spin animated"></i>
+								<i class="fa fa-plus pull-right" aria-hidden="true"></i>								
+							</a>
+						</div>
+						<div id="about_item4" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<ul class="clearfix">
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/45_kessan.pdf" target="_b">Financial Statement for 45th Period (Year of March 2017) (pdf, 281kb)</a></li>
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/44_kessan.pdf" target="_b">Financial Statement for 44th Period (Year of March 2017) (pdf, 91kb)</a></li>
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/43_kessan.pdf" target="_b">Financial Statement for 43rd Period (Year of March 2016) (pdf, 554kb)</a></li>
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/42_kessan.pdf" target="_b">Financial Statement for 42nd Period (Year of March 2015) (pdf, 182kb)</a></li>
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/41_kessan.pdf" target="_b">Financial Statement for 41st Period (Year of March 2014) (pdf, 541kb)</a></li>
+									<li class="col-sm-6"><a href="http://www.goshigiken.com/pdf/en_kessan/40_kessan.pdf" target="_b">Financial Statement for 40th Period (Year of March 2013) (pdf, 571kb)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<a class="accordion-toggle btn btn-link" data-toggle="collapse" data-parent="#accordion" href="#about_item5">
+								<i class="fa fa-spinner faa-spin animated"></i>  Directors <i class="fa fa-spinner faa-spin animated"></i> 
+								<i class="fa fa-plus pull-right" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div id="about_item5" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<tbody>
+										<tr><th>President &amp; Representative Director</th><td>Yoshiki Matsubara</td></tr>
+										<tr><th>Managing Director</th><td>Ryuichi Nishimura</td></tr>
+										<tr><th>Managing Director</th><td>Akihiro Hara</td></tr>
+										<tr><th>Managing Director</th><td>Kenji Mitsuhashi</td></tr>
+										<tr><th>Managing Director</th><td>Hirohisa Fujita</td></tr>
+										<tr><th>Managing Director</th><td>Shin Koiwa</td></tr>
+										<tr><th>Director(Part-time)</th><td>Jiro Yamaguchi</td></tr>
+										<tr><th>Auditor</th><td>Ryoichi Nakahara</td></tr>
+										<tr><th>Auditor(Part-time)</th><td>Yasuyuki Mizutani</td></tr>
+										<tr><th>Operating Officer</th><td>Kazuo Asahina</td></tr>
+										<tr><th>Operating Officer</th><td>Kenji Nishiguchi</td></tr>
+										<tr><th>Operating Officer</th><td>Tetsuya Nishioka</td></tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+			</main>
+		</div>
+	</div>
+	<div class="section-four">
+		<div class="overlay">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12"></div>
+				</div>
+			</div>
+		</div>
+	</div>

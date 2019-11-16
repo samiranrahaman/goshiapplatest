@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -8,7 +10,17 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  route: string;
+	 
+  constructor(location: Location, router: Router,private http: HttpClient) {
+    router.events.subscribe((val) => {
+      if(location.path() != ''){
+        this.route = location.path();
+      } else {
+        this.route = 'admin/dashboard'
+      }
+    });
+  }
 
   ngOnInit() {
   }

@@ -1,0 +1,26 @@
+ 	<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/jp/home"><img src="/assets/images/logo.png"  class="logo"/></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+			<a href="/jp/home" class="navbar-right" style="display:none;"><img src="/assets/images/flag2.png"  class="flag"/></a>
+			<ul class="nav navbar-nav navbar-right">
+				<li  [routerLinkActive]="'active'" ><a [routerLink]="['/jp/home']">ホーム</a></li>
+				<li  [routerLinkActive]="'active'"><a [routerLink]="['/jp/about']">会社情報</a></li>
+				<li  [routerLinkActive]="'active'"><a [routerLink]="['/jp/products']">製品</a></li>			
+				<li  [routerLinkActive]="'active'"><a [routerLink]="['/jp/technology']">技術</a></li>
+				<li  [routerLinkActive]="'active'"><a [routerLink]="['/jp/careers']">人事</a></li>
+				<li  [routerLinkActive]="'active'"><a [routerLink]="['/jp/contact']">連絡情報</a></li>
+				<li><a  style="padding: 6px 0px;" href="/home" class="flag"><img style="width: 50px;" src="/assets/images/flag2.png" /></a></li>
+				
+			</ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav> 

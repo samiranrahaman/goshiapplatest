@@ -10,20 +10,34 @@ import { HttpClient } from '@angular/common/http';
 export class LoginComponent implements OnInit {
 
   logindata= {};
-
+//loginerror:any;
+ home:any;
   constructor(private http: HttpClient, private router: Router) { }
   
 
   ngOnInit() {
+	 // this.loginerror={};
   }
 
   login() {
+	  this.home={};
 	  
 	    this.http.post('/login', this.logindata)
       .subscribe(res => {
-          let id = res['_id'];
-          //this.router.navigate(['/book-details', id]);
-		  this.router.navigate(['/admin/dashboard']);
+          let status = res['status'];
+		  console.log(status);
+		  if(status=='success')
+		  {
+			  
+		      this.router.navigate(['/admin/dashboard']);
+		  }
+		  else
+		  {
+			 var obj7 = { 'error': "Username/Password is Wrong!"};
+              this.home = Object.assign( this.home, obj7);
+			  console.log(this.home); 
+		  }
+		  
         }, (err) => {
           console.log(err);
         }

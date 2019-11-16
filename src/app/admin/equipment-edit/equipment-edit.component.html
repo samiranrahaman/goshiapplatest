@@ -1,0 +1,87 @@
+<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+							<i class="glyphicon glyphicon-align-left faa-pulse animated"></i>
+						</button>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<div class="container-fluid">
+				<div class="content_bg">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="container" >
+							  <h1>Equipment Update</h1>
+							  <div class="row">
+								<div class="col-md-6">
+								  <form (ngSubmit)="saveProduct()" #productForm="ngForm" enctype="multipart/form-data">
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active"><a href="#english" aria-controls="home" role="tab" data-toggle="tab">English</a></li>
+										<li role="presentation"><a href="#japan" aria-controls="profile" role="tab" data-toggle="tab">Japan</a></li>
+									</ul>
+									<div class="tab-content">
+										   <div role="tabpanel" class="tab-pane active p-10" id="english">
+												
+												<div class="form-group">
+												  <label for="name">Item Name</label> 
+												   <!--<input type="text" class="form-control" [(ngModel)]="postdata.item_name" name="item_name" required>-->
+												    <select class="form-control" [(ngModel)]="postdata.item_name" name="item_name" required>
+													   <option *ngFor="let o of options">
+														  {{o.name}}
+													   </option>
+													</select>
+												</div>
+												<div class="form-group">
+												  <label for="name">Machine Name</label>
+												   <input type="text" class="form-control" [(ngModel)]="postdata.machine_name" name="machine_name" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Qty</label>
+												   <input type="text" class="form-control" [(ngModel)]="postdata.qty" name="qty" required>
+												</div>
+												
+											</div>
+											<div role="tabpanel" class="tab-pane p-10" id="japan">
+											   
+												<div class="form-group">
+												  <label for="name">Item Name</label>
+												   <!--<input type="text" class="form-control" [(ngModel)]="postdata.jp_item_name" name="jp_item_name" required>-->
+												   <select class="form-control" [(ngModel)]="postdata.jp_item_name" name="jp_item_name" required>
+													   <option *ngFor="let o2 of options2">
+														  {{o2.name}}
+													   </option>
+													</select>
+												</div>
+												<div class="form-group">
+												  <label for="name">Machine Name</label>
+												   <input type="text" class="form-control" [(ngModel)]="postdata.jp_machine_name" name="jp_machine_name" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Qty</label>
+												   <input type="text" class="form-control" [(ngModel)]="postdata.jp_qty" name="jp_qty" required>
+												</div>
+												
+											</div>
+											
+									</div>
+									<div class="form-group">
+									  <button type="submit" class="btn btn-success" [disabled]="!productForm.form.valid">Update</button>
+									</div>
+								  </form>
+								</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			

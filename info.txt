@@ -1,0 +1,11 @@
+Gosthi server : 
+ip: 159.89.251.238
+User : root
+pass: Goshi@1234
+
+167.99.193.141
+Goshi@123#!
+
+https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL
+
+https://stackoverflow.com/questions/35721206/how-to-enable-production-mode-in-angular-2

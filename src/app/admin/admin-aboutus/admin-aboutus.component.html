@@ -1,0 +1,307 @@
+<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+							<i class="glyphicon glyphicon-align-left faa-pulse animated"></i>
+						</button>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<div class="container-fluid">
+				<div class="content_bg">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="container" >
+							  <h1>About Us</h1>
+							  <div class="row">
+								<div class="col-md-6">
+								  <form (ngSubmit)="saveProduct()" #productForm="ngForm" enctype="multipart/form-data">
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active"><a href="#english" aria-controls="home" role="tab" data-toggle="tab">English</a></li>
+										<li role="presentation"><a href="#japan" aria-controls="profile" role="tab" data-toggle="tab">Japan</a></li>
+									</ul>
+									<div class="tab-content">
+										   <div role="tabpanel" class="tab-pane active p-10" id="english">
+												
+												<div class="form-group">
+												  <label for="name">Aim of Corporate Image</label>
+												  <textarea id="txtEditor1ENG" class="form-control" [(ngModel)]="postdata.aim" name="aim" required></textarea>
+												  
+												</div>
+												
+												<div class="form-group">
+												  <label for="name">Company Motto</label>
+												  <textarea  id="txtEditor2ENG" class="form-control" [(ngModel)]="postdata.moto" name="moto" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Company Policy</label>
+												  <textarea id="txtEditor3ENG"  class="form-control" [(ngModel)]="postdata.policy" name="policy" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Basic Policy</label>
+												  <textarea  id="txtEditor4ENG" class="form-control" [(ngModel)]="postdata.basicpolicy" name="basicpolicy" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Our Code of Conduct</label>
+												  <textarea  id="txtEditor5ENG" class="form-control" [(ngModel)]="postdata.codeofconduct" name="codeofconduct" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Compliance</label>
+												  <textarea  id="txtEditor5ENG" class="form-control" [(ngModel)]="postdata.compliance" name="compliance" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Road Safety</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.roadsafety" name="roadsafety" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Protecting the Environment</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.ProtectingtheEnvironment" name="ProtectingtheEnvironment" required></textarea>
+												</div>
+												
+												
+												<div class="form-group">
+												  <label for="name">Contributing to Society</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.ContributingtoSociety" name="ContributingtoSociety" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Managing Information</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.ManagingInformation" name="ManagingInformation" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Safety and Health</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.SafetyandHealth" name="SafetyandHealth" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Discrimination</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.Discrimination" name="Discrimination" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Protecting Privacy</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.ProtectingPrivacy" name="ProtectingPrivacy" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Business Interactions</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.BusinessInteractions" name="BusinessInteractions" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Relationship with Government</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.RelationshipwithGovernment" name="RelationshipwithGovernment" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Communication</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.Communication" name="Communication" required></textarea>
+												</div>
+												
+												<p>Company Overview</p>
+												<div class="form-group">
+												  <label for="name">Company Name</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.CompanyName" name="CompanyName" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Founded</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.Founded" name="Founded" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Headquarters</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.Headquarters" name="Headquarters" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Capital</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.Capital" name="Capital" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Main Shareholders</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.MainShareholders" name="MainShareholders" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Area</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.Area" name="Area" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Employees(Group Employees)</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.GroupEmployees" name="GroupEmployees" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Main Delivery Destinations</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.MainDeliveryDestinations" name="MainDeliveryDestinations" required></textarea>
+												</div>
+												
+												<div class="form-group">
+												  <label for="name">Contact Address</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.contactaddress" name="contactaddress" required></textarea>
+												</div>
+												
+												<div class="form-group">
+												  <label for="name">Contact Number 1</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.ph1" name="ph1" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Contact Number 2</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.ph2" name="ph2" required>
+												</div>
+												
+												<div class="form-group">
+												  <label for="name">Email Id</label>
+												  <input type="email" class="form-control" [(ngModel)]="postdata.email" name="email" required>
+												</div>
+												
+												
+											</div>
+											<div role="tabpanel" class="tab-pane p-10" id="japan">
+											    	<div class="form-group">
+												  <label for="name">Aim of Corporate Image</label>
+												  <textarea  class="form-control" [(ngModel)]="postdata.jp_aim" name="jp_aim" required></textarea>
+												</div>
+												
+												<div class="form-group">
+												  <label for="name">Company Motto</label>
+												  <textarea  class="form-control" [(ngModel)]="postdata.jp_moto" name="jp_moto" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Company Policy</label>
+												  <textarea  class="form-control" [(ngModel)]="postdata.jp_policy" name="jp_policy" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Basic Policy</label>
+												  <textarea  class="form-control" [(ngModel)]="postdata.jp_basicpolicy" name="jp_basicpolicy" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Our Code of Conduct</label>
+												  <textarea  class="form-control" [(ngModel)]="postdata.jp_codeofconduct" name="jp_codeofconduct" required></textarea>
+												</div>
+												
+												
+												
+												
+												<div class="form-group">
+												  <label for="name">Compliance</label>
+												  <textarea  id="txtEditor5ENG" class="form-control" [(ngModel)]="postdata.jp_compliance" name="jp_compliance" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Road Safety</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_roadsafety" name="jp_roadsafety" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Protecting the Environment</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_ProtectingtheEnvironment" name="jp_ProtectingtheEnvironment" required></textarea>
+												</div>
+												
+												
+												<div class="form-group">
+												  <label for="name">Contributing to Society</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_ContributingtoSociety" name="jp_ContributingtoSociety" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Managing Information</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_ManagingInformation" name="jp_ManagingInformation" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Safety and Health</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_SafetyandHealth" name="jp_SafetyandHealth" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Discrimination</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_Discrimination" name="jp_Discrimination" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Protecting Privacy</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_ProtectingPrivacy" name="jp_ProtectingPrivacy" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Business Interactions</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_BusinessInteractions" name="jp_BusinessInteractions" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Relationship with Government</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_RelationshipwithGovernment" name="jp_RelationshipwithGovernment" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Communication</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_Communication" name="jp_Communication" required></textarea>
+												</div>
+												
+												<p>Company Overview</p>
+												
+												<div class="form-group">
+												  <label for="name">Company Name</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.jp_CompanyName" name="jp_CompanyName" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Founded</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.jp_Founded" name="jp_Founded" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Headquarters</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_Headquarters" name="jp_Headquarters" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Capital</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_Capital" name="jp_Capital" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Main Shareholders</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_MainShareholders" name="jp_MainShareholders" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Area</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_Area" name="jp_Area" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Employees(Group Employees)</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_GroupEmployees" name="jp_GroupEmployees" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Main Delivery Destinations</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_MainDeliveryDestinations" name="jp_MainDeliveryDestinations" required></textarea>
+												</div>
+												<div class="form-group">
+												  <label for="name">Contact Address</label>
+												  <textarea  id="" class="form-control" [(ngModel)]="postdata.jp_contactaddress" name="jp_contactaddress" required></textarea>
+												</div>
+												
+												<div class="form-group">
+												  <label for="name">Contact Number 1</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.jp_ph1" name="jp_ph1" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Contact Number 2</label>
+												  <input type="text" class="form-control" [(ngModel)]="postdata.jp_ph2" name="jp_ph2" required>
+												</div>
+												<div class="form-group">
+												  <label for="name">Email Id</label>
+												  <input type="email" class="form-control" [(ngModel)]="postdata.jp_email" name="jp_email" required>
+												</div>
+												
+											</div>
+											<div class="form-group">
+												  <label for="name">Production Image</label>
+												 <img style="width: 19%" src="{{ postdata.productimage }}" />
+												<input type="file" accept="image/*" (change)="changeListener($event)">
+											</div>
+									</div>
+									<div class="form-group">
+									  <button type="submit" class="btn btn-success" [disabled]="!productForm.form.valid">Save</button>
+									</div>
+								  </form>
+								</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			

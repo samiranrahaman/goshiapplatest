@@ -1,0 +1,176 @@
+<div class="bg_contact">
+		<div class="container_bg">
+			<main role="main" class="container-fluid technology">			
+				<h4 class="page_heading">技術</h4>
+				<div class="row top">
+					<div class="col-sm-6">
+						<img src="{{home.technologydata[0].productimage}}" class="img-responsive"/>
+					</div>
+					<div class="col-sm-6">
+					<p class="text" [innerHTML]="home.technologydata[0].jp_description"></p>
+						
+					</div>
+				</div>
+				<div class="row topBottom">
+					<div class="col-sm-12">
+						<div class="carousel carousel-showsixmoveone slide" id="topBottom">
+							<div class="carousel-inner">
+								<div class="item PIC " *ngFor="let item of home.technologydata; let i = index" id="technologydatadiv{{i}}">
+									<div class="col-xs-12 col-sm-4 col-md-2">
+										<div class="hovereffect">
+											<img src="{{item.productimage}}" class="img-responsive"/>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-20">
+					<div class="col-sm-12">
+						<h3 class="title">設備一覧表</h3>
+						<div class="table-responsive mb-20">
+							<table class="table table-bordered">
+								<thead>
+									<th>項目</th>
+									<th>設備名</th>
+									<th>台数</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>担体</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.HoneyComb">
+												{{item.jp_machine_name}}
+												</li>
+												<!--<li>Core Press Fit M/C</li>
+												<li>Pipe Coating M/C</li>
+												<li>Making M/C</li>
+												<li>Dryer M/C</li>
+												<li>Vacuum furnace</li>
+												<li>Puss Out M/C</li>
+												<li>Pipe degreasing line</li>-->
+											</ul>
+										</td>
+										<td>
+											<ul>
+											   <li  *ngFor="let item of home.HoneyComb">
+												{{item.jp_qty}}
+												</li>
+												
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>プレス機・曲げ加工機</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.PressBending">
+												{{item.jp_machine_name}}
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												  <li  *ngFor="let item of home.PressBending">
+												{{item.jp_qty}}
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>溶接</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.Welding">{{item.jp_machine_name}}
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.Welding">{{item.jp_qty}}
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>加工機</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.MachiningTools">{{item.jp_machine_name}}
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.MachiningTools">{{item.jp_qty}}
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>品質保証設備</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.QualityassuranceEquipment">{{item.jp_machine_name}}
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.QualityassuranceEquipment">{{item.jp_qty}}
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>付属設備</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.AccessoryEquipment">{{item.jp_machine_name}}
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul>
+												<li  *ngFor="let item of home.AccessoryEquipment">{{item.jp_qty}}
+												</li>
+											</ul>
+										</td>
+									</tr>
+								<tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-sm-4 col-sm-offset-4 manufacturing">
+					<!--<div class="col-sm-12 manufacturing">-->
+						<h3 class="title">製造プロセス</h3>
+						<ul>
+							<li   *ngFor="let itemmanu of home.manufacturingdata">{{itemmanu.jp_process}}</li>
+							<!--<li>Welding</li>
+							<li>TIG Welding</li>
+							<li>MIG Welding</li>
+							<li>Press/Bending</li>
+							<li>Honey Comb Molding</li>
+							<li>Brazing</li>
+							<li>Baking and drying</li>
+							<li>Vacuum hardening</li>-->
+						</ul>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<div class="section-four">
+		<div class="overlay">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		

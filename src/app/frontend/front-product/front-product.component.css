@@ -1,0 +1,15 @@
+#slideshow {
+		  position: relative;
+		  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+		}		
+		#slideshow > div {
+		  position: absolute;
+		  top: 0px;
+		  left: 0px;
+		  right: 0px;
+		  bottom: 15px;
+		  float: left;
+		}
+		#slideshow > div > img{
+		  margin-bottom:15px;
+		}
