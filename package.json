@@ -32,7 +32,7 @@
     "morgan": "^1.9.0",
     "ngx-loading": "^2.0.1",
     "ngx-spinner": "^6.1.2",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "rxjs": "^5.5.2",
     "serve-favicon": "^2.5.0",
     "touch-cli": "0.0.1",
