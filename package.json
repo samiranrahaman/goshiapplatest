@@ -28,7 +28,7 @@
     "express-fileupload": "^1.0.0-alpha.1",
     "forever": "^0.15.3",
     "fs": "0.0.1-security",
-    "mongoose": "^5.1.5",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.0",
     "ngx-loading": "^2.0.1",
     "ngx-spinner": "^6.1.2",
